@@ -94,16 +94,17 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 68px
+            height: 80px
         }
 
         .lg {
             position: relative;
-            height: 46px;
+            height: 60px;
             aspect-ratio: 16 / 9;
-            border-radius: 12px;
+            flex-shrink: 0;
+            border-radius: 14px;
             border: 2.5px solid #1184A8;
-            box-shadow: 0 0 14px rgba(0, 224, 255, 0.45);
+            box-shadow: 0 0 16px rgba(0, 224, 255, 0.48);
             background: #000;
             display: flex;
             align-items: center;
@@ -116,7 +117,7 @@
 
         .lg:hover {
             border-color: #00E0FF;
-            box-shadow: 0 0 22px rgba(0, 224, 255, 0.75);
+            box-shadow: 0 0 24px rgba(0, 224, 255, 0.8);
             transform: scale(1.03);
         }
 
@@ -126,15 +127,20 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
-            border-radius: calc(12px - 2.5px);
+            border-radius: calc(14px - 2.5px);
             display: block;
         }
 
         nav {
             display: flex;
-            gap: 24px;
+            gap: 20px;
             font-size: 15px;
-            color: var(--muted)
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        nav a {
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -143,11 +149,13 @@
 
         .btn {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 10px 22px;
             border-radius: 999px;
             font-weight: 600;
             font-size: 15px;
-            border: 1px solid transparent
+            border: 1px solid transparent;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .btn.p {
